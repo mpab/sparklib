@@ -1,2 +1,20 @@
 *.class
 *.log
+
+# OS X
+.DS_STORE
+
+# sbt
+# (may want to keep parts of 'project')
+dist/*
+target/
+lib_managed/
+src_managed/
+boot/
+project/
+target/
+.history
+.cache
+.lib/
+.metals
+.bloop
