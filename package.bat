@@ -1,6 +1,7 @@
 pushd sparklib
 rmdir /s /q target
-call sbt package
+REM call sbt package
+call sbt publishLocal
 popd
 
 pushd sparkapp
