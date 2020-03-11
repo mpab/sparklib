@@ -1,7 +1,12 @@
-# sparklib
-for working with apache spark
+# Sparklib
+
+For working with apache spark
 
 
+## package/run
 
-retrieveManaged := true // copy all jars locally
+```console
+$ package
+ --> building and packaging happens...
+$ run
 
