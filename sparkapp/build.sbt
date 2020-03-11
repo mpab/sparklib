@@ -2,12 +2,12 @@ import Dependencies._
 
 ThisBuild / scalaVersion     := "2.11.8"
 ThisBuild / version          := "0.1.0-SNAPSHOT"
-ThisBuild / organization     := "com.sample"
-ThisBuild / organizationName := "sample"
+ThisBuild / organization     := "io.asrai"
+ThisBuild / organizationName := "asrai"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "SparkApp",
+    name := "sparkapp",
     libraryDependencies += scalaTest % Test,
     libraryDependencies += "org.apache.spark" %% "spark-core" % "2.2.0",
     libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.2.0",
