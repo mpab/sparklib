@@ -7,13 +7,11 @@ ThisBuild / organizationName := "asrai"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "sparkapp",
+    name := "sparklib",
     libraryDependencies += scalaTest % Test,
-    //libraryDependencies += "org.apache.spark" %% "spark-core" % "2.2.0",
-    //libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.2.0",
-    libraryDependencies += "io.asrai" %% "sparklib" % "0.1.0-SNAPSHOT",
-    resolvers += "Akka Repository" at "https://repo.akka.io/releases/",
-    retrieveManaged := true // copy all jars locally
+    libraryDependencies += "org.apache.spark" %% "spark-core" % "2.2.0",
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.2.0",
+    resolvers += "Akka Repository" at "https://repo.akka.io/releases/"
   )
 
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.

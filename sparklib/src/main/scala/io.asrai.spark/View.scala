@@ -11,7 +11,7 @@ package io.asrai.spark {
     If priority is CSV, delete existing parquet
     */
 
-    class View (instruction: CreateViewFromStorage) extends SparkSessionWrapper {
+    class View (instruction: CreateViewFromStorage) extends SparkContext {
 
         val dataFrame = 
             if (new File(instruction.parquetPath).exists) {

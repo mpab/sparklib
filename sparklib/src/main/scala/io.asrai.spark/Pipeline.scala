@@ -1,10 +1,11 @@
 package io.asrai.spark {
 
-    object Process { 
+    object Pipeline {
 
         def Run(args: Array[String]) : Unit = {
-            println("Valid scala source file with args")
+        }
 
+        def Run() : Unit = {
             val instruction = new CreateViewFromStorage(
                 "CoreCashTransactions",
                 "/Enterprise Business Reports/reconciliation_core_cb_2020-03-06/01.extract/CoreCashTransactions.csv",
